@@ -1,0 +1,87 @@
+doctype html
+head
+  meta(charset="utf-8")
+  //- <!-- Latest compiled and minified CSS -->
+  //- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  //-
+  //- <!-- Latest compiled and minified JavaScript -->
+  //- //- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200,300,400,500">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:100,300,700,800">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+
+  title CodeCHS
+body(style="background:none;")
+  .pusher
+    .row
+      //- .three.wide.column(style="opacity:0.7;")
+      //-   //- .ui.vertical.fluid.menu(style="height:2000px;margin-left:24px;")
+      //-   //-   a.item About
+      //-   //-   a.item Portfolio
+      //-   //-   a.item Resume
+      //-   //-   a.item Music
+      //-   //-   a.item Blog
+      //-   //-   a.item Weather
+      //- .one.wide.column
+      //- .ten.wide.column
+      .ui.container
+      .ui.container(style="background:white;opacity:0.8;padding:60px;border-radius:10px;")
+        img.ui.medium.rounded.image.floated.right(src="logo.png")
+        .header.ui
+          h2 Hi There,
+        //- .ui.divider
+        p I thrive on ambition, good design, entrepreneurial energy and curiosity, leading an adventurous life full of travel and creativity with my work being reflective of these experiences.
+        p I am currently living in San Francisco, but can often be found in other places all around the world.
+        p Much of my energy goes into my creative and entreprenuerial projects in addition to health/self-improvement and spending time with my friends and family. I hope you enjoy what I have to share and are inspired by what I have to offer!
+        .ui.clearing.divider
+        <div class="ui two cards">
+          <a class="red card large">
+            <div class="image">
+              <img src="bg1.jpeg">
+            </div>
+          </a>
+          <a class="orange card large">
+            <i class="browser icon x-large"></i>
+            //- <div class="image">
+            //- </div>
+          </a>
+        </div>
+        // RIGHT SIDEBAR
+        .ui.right.sidebar.visible.thin(style="box-shadow:none;")
+          .roww.social-row.top-row
+            button.ui.circular.facebook.icon.button.basic.inverted.large
+              i.facebook.icon
+          .row.social-row
+            button.ui.circular.twitter.icon.button.basic.inverted.large
+              i.twitter.icon
+          .row.social-row
+            button.ui.circular.linkedin.icon.button.basic.inverted.large
+              i.linkedin.icon
+          .row.social-row
+            button.ui.circular.google.plus.icon.button.basic.inverted.large
+              i.google.plus.icon
+
+        // LEFT SIDEBAR
+        .ui.left.sidebar.visible(style="box-shadow:none;")
+          .row
+            <div class="ui vertical fluid menu" style="border:none; box-shadow:none; background:none;">
+              <div class="ui move reveal" style="margin:0 auto;width:63%;margin-top:9px;">
+                <div class="hidden content centered">
+                  <img src="me.png" class="ui small image circular">
+                </div>
+                <div class="visible content">
+                  <img src="logo.png" class="ui small image circular">
+                </div>
+              </div>
+            </div>
+            .ui.vertical.fluid.menu(style="height:2000px;padding-left:10px;width:90%!important;margin:0 auto;opacity:0.7;text-align:right;")
+              a.item About
+              a.item Portfolio
+              a.item Resume
+              a.item Music
+              a.item Blog
+              a.item Weather
+              //- .row

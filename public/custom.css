@@ -1,0 +1,37 @@
+.overlay.fixed > .menu {
+  left: 1000px!important;
+}
+
+.overlay .menu {
+  position: relative;
+  left: 0;
+  transition: left 0.5s ease;
+}
+
+html {
+  /*position: fixed;*/
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url(scene.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /*-webkit-filter: blur(1px);*/
+  /*-moz-filter: blur(1px);*/
+  /*-o-filter: blur(1px);*/
+  /*-ms-filter: blur(1px);*/
+  /*filter: blur(1px);*/
+}
+
+.social-row {
+  text-align: right;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.top-row {
+  padding-top: 20px;
+}
