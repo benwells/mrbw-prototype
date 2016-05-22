@@ -32,28 +32,68 @@ body(style="background:none;")
       button.ui.circular.google.plus.icon.button.basic.inverted.large
         i.google.plus.icon
 
-  // LEFT SIDEBAR
-  .ui.left.sidebar(style="box-shadow:none;")
-    .row
-      <div class="ui vertical fluid menu" style="border:none; box-shadow:none; background:none;">
-        <div class="ui move reveal" style="margin:0 auto;width:63%;margin-top:9px;">
-          <div class="hidden content centered">
-            <img src="me.png" class="ui small image circular">
-          </div>
-          <div class="visible content">
-            <img src="logo.png" class="ui small image circular">
+  .ui.grid
+    <div class="three wide column">
+      .row
+        <div class="ui vertical fluid menu" style="border:none; box-shadow:none; background:none;">
+          <div class="ui move reveal" style="margin:0 auto;width:63%;margin-top:9px;">
+            <div class="hidden content centered">
+              <img src="me.png" class="ui small image circular">
+            </div>
+            <div class="visible content">
+              <img src="logo.png" class="ui small image circular">
+            </div>
           </div>
         </div>
-      </div>
-      .ui.vertical.fluid.menu(style="height:2000px;padding-left:10px;width:90%!important;margin:0 auto;opacity:0.7;text-align:right;")
-        a.item About
-        a.item Portfolio
-        a.item Resume
-        a.item Music
-        a.item Blog
-        a.item Weather
+        .ui.vertical.fluid.menu.myfont(style="height:2000px;padding-left:10px;width:16%!important;margin:0 auto;opacity:0.7;text-align:right;position:fixed;")
+          a.item About
+          a.item Portfolio
+          a.item Resume
+          a.item Music
+          a.item Blog
+          a.item Weather
+    </div>
 
-  .pusher
+    // RIGHT COLUMN
+    .eleven.wide.column(style="margin-top:177px;")
+      .row
+        .ui.two.column.grid
+          .column(style="text-align:right;")
+            .header.ui.myfont(style="font-size:-webkit-xxx-large;") Hi There,
+            .header.ui.myfont My name is Ben Wells.
+            .header.ui.myfont I create beautiful & functional sites and applications for the web.
+          .column
+            img.ui.medium.rounded.image.floated.left(src="me.png")
+      //- .row
+      .ui.text.container(style="text-align:center;")
+        .header.divider
+        //- <i class="arrow circle outline down icon extra large" style="font-size:5.5em;margin: 0 auto;"></i>
+      //-   h3.myfont Below are a few services I provide:
+    </div>
+  </div>
+
+  // LEFT SIDEBAR
+  //- .ui.left.sidebar(style="box-shadow:none;")
+  //-   .row
+  //-     <div class="ui vertical fluid menu" style="border:none; box-shadow:none; background:none;">
+  //-       <div class="ui move reveal" style="margin:0 auto;width:63%;margin-top:9px;">
+  //-         <div class="hidden content centered">
+  //-           <img src="me.png" class="ui small image circular">
+  //-         </div>
+  //-         <div class="visible content">
+  //-           <img src="logo.png" class="ui small image circular">
+  //-         </div>
+  //-       </div>
+  //-     </div>
+  //-     .ui.vertical.fluid.menu(style="height:2000px;padding-left:10px;width:90%!important;margin:0 auto;opacity:0.7;text-align:right;")
+  //-       a.item About
+  //-       a.item Portfolio
+  //-       a.item Resume
+  //-       a.item Music
+  //-       a.item Blog
+  //-       a.item Weather
+
+  //- .pusher
     //- .three.wide.column(style="opacity:0.7;")
     //-   //- .ui.vertical.fluid.menu(style="height:2000px;margin-left:24px;")
     //-   //-   a.item About
@@ -65,10 +105,11 @@ body(style="background:none;")
     //- .one.wide.column
     //- .ten.wide.column
     .ui.container
+      h1 Mr. Ben Wells
     .ui.container.segment(style="background:white;opacity:0.8;padding:60px;border-radius:10px;margin-top:177px;")
       img.ui.medium.rounded.image.floated.right(src="me.png")
       .header.ui
-        h2 Hi There,
+        h1 Hi There,
       //- .ui.divider
       p I thrive on ambition, good design, entrepreneurial energy and curiosity, leading an adventurous life full of travel and creativity with my work being reflective of these experiences.
       p I am currently living in San Francisco, but can often be found in other places all around the world.

@@ -2,6 +2,15 @@
   left: 1000px!important;
 }
 
+.myfont {
+  font-family: Raleway!important;
+  font-weight: 500!important;
+}
+
+.nobg {
+  background:none!important;
+}
+
 .overlay .menu {
   position: relative;
   left: 0;
