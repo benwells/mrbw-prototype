@@ -22,7 +22,7 @@ html {
   left: 0;
   right: 0;
   z-index: 1;
-  background: url(mtns.jpeg) no-repeat center center fixed;
+  background: url(fade.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
