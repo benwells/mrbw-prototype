@@ -4,7 +4,8 @@
 
 .myfont {
   font-family: Raleway!important;
-  font-weight: 500!important;
+  font-weight: 200!important;
+  color:#E6E0CB!important;
 }
 
 .nobg {
@@ -17,12 +18,31 @@
   transition: left 0.5s ease;
 }
 
+.item:hover {
+  border-color: #1B1C1D!important;
+}
+
+.main-menu {
+  height: 100px;
+  position: absolute;
+  /*width: 100%;*/
+  bottom: 100px;
+  z-index: 999;
+  padding: 0px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 html {
   /*position: fixed;*/
-  left: 0;
-  right: 0;
+  /*left: 0;
+  right: 0;*/
   z-index: 1;
-  background: url(fade.jpg) no-repeat center center fixed;
+  /*background: url(fade.jpg) no-repeat center center fixed;*/
+  background: #1A3742;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1A3742), to(#9EA183));
+    background-image: -webkit-linear-gradient(top, #1A3742, #9EA183);
+    /*background-image: -webkit-linear-gradient(top, #62929E, #C6C5B9);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,7 +52,7 @@ html {
   /*-moz-filter: blur(1px);*/
   /*-o-filter: blur(1px);*/
   /*-ms-filter: blur(1px);*/
-  /*filter: blur(1px);*/
+  /*filter: blur(1px);
 }
 
 .social-row {

@@ -17,113 +17,38 @@ head
 
   title CodeCHS
 body(style="background:none;")
-  // RIGHT SIDEBAR
-  .ui.right.sidebar.thin(style="box-shadow:none;")
-    .roww.social-row.top-row
-      button.ui.circular.facebook.icon.button.basic.inverted.large
-        i.facebook.icon
-    .row.social-row
-      button.ui.circular.twitter.icon.button.basic.inverted.large
-        i.twitter.icon
-    .row.social-row
-      button.ui.circular.linkedin.icon.button.basic.inverted.large
-        i.linkedin.icon
-    .row.social-row
-      button.ui.circular.google.plus.icon.button.basic.inverted.large
-        i.google.plus.icon
-
-  .ui.grid
-    <div class="three wide column">
-      .row
-        <div class="ui vertical fluid menu" style="border:none; box-shadow:none; background:none;">
-          <div class="ui move reveal" style="margin:0 auto;width:63%;margin-top:9px;">
-            <div class="hidden content centered">
-              <img src="me.png" class="ui small image circular">
-            </div>
-            <div class="visible content">
-              <img src="logo.png" class="ui small image circular">
-            </div>
-          </div>
-        </div>
-        .ui.vertical.fluid.menu.myfont(style="height:2000px;padding-left:10px;width:16%!important;margin:0 auto;opacity:0.7;text-align:right;position:fixed;")
-          a.item About
-          a.item Portfolio
-          a.item Resume
-          a.item Music
-          a.item Blog
-          a.item Weather
-    </div>
-
-    // RIGHT COLUMN
-    .eleven.wide.column(style="margin-top:177px;")
-      .row
-        .ui.two.column.grid
-          .column(style="text-align:right;")
-            .header.ui.myfont(style="font-size:-webkit-xxx-large;") Hi There,
-            .header.ui.myfont My name is Ben Wells.
-            .header.ui.myfont I create beautiful & functional sites and applications for the web.
-          .column
-            img.ui.medium.rounded.image.floated.left(src="me.png")
-      //- .row
-      .ui.text.container(style="text-align:center;")
-        .header.divider
-        //- <i class="arrow circle outline down icon extra large" style="font-size:5.5em;margin: 0 auto;"></i>
-      //-   h3.myfont Below are a few services I provide:
-    </div>
-  </div>
-
-  // LEFT SIDEBAR
-  //- .ui.left.sidebar(style="box-shadow:none;")
-  //-   .row
-  //-     <div class="ui vertical fluid menu" style="border:none; box-shadow:none; background:none;">
-  //-       <div class="ui move reveal" style="margin:0 auto;width:63%;margin-top:9px;">
-  //-         <div class="hidden content centered">
-  //-           <img src="me.png" class="ui small image circular">
-  //-         </div>
-  //-         <div class="visible content">
-  //-           <img src="logo.png" class="ui small image circular">
-  //-         </div>
-  //-       </div>
-  //-     </div>
-  //-     .ui.vertical.fluid.menu(style="height:2000px;padding-left:10px;width:90%!important;margin:0 auto;opacity:0.7;text-align:right;")
-  //-       a.item About
-  //-       a.item Portfolio
-  //-       a.item Resume
-  //-       a.item Music
-  //-       a.item Blog
-  //-       a.item Weather
-
-  //- .pusher
-    //- .three.wide.column(style="opacity:0.7;")
-    //-   //- .ui.vertical.fluid.menu(style="height:2000px;margin-left:24px;")
-    //-   //-   a.item About
-    //-   //-   a.item Portfolio
-    //-   //-   a.item Resume
-    //-   //-   a.item Music
-    //-   //-   a.item Blog
-    //-   //-   a.item Weather
-    //- .one.wide.column
-    //- .ten.wide.column
+  .ui.segment(style="background:none;height:100%;")
+    .ui.container(style="margin-top:250px;margin-bottom:75px;")
+      h1.ui.dividing.header.myfont(style="text-align:center;font-size:100px;letter-spacing:18px;") MR.BEN.WELLS
     .ui.container
-      h1 Mr. Ben Wells
-    .ui.container.segment(style="background:white;opacity:0.8;padding:60px;border-radius:10px;margin-top:177px;")
-      img.ui.medium.rounded.image.floated.right(src="me.png")
-      .header.ui
-        h1 Hi There,
-      //- .ui.divider
-      p I thrive on ambition, good design, entrepreneurial energy and curiosity, leading an adventurous life full of travel and creativity with my work being reflective of these experiences.
-      p I am currently living in San Francisco, but can often be found in other places all around the world.
-      p Much of my energy goes into my creative and entreprenuerial projects in addition to health/self-improvement and spending time with my friends and family. I hope you enjoy what I have to share and are inspired by what I have to offer!
-      .ui.clearing.divider
-      <div class="ui two cards">
-        <a class="red card large">
-          <div class="image">
-            <img src="bg1.jpeg">
-          </div>
-        </a>
-        <a class="orange card large">
-          <i class="browser icon x-large"></i>
-          //- <div class="image">
-          //- </div>
-        </a>
-      </div>
+      .ui.two.column.grid.stackable
+        .column(style="text-align:right;margin-top:15px;")
+          .header.ui.myfont(style="font-size:-webkit-xxx-large;") Hi There,
+          .header.ui.myfont(style="font-size:35px;") My name is Ben Wells.
+          .header.ui.myfont(style="font-size:18px;") I create beautiful & functional sites and applications for the web.
+        .column
+          img.ui.medium.circular.image(src="me.png")
+    .ui.container(style="text-align:center;")
+      .ui.secondary.pointing.icon.labeled.compact.menu.myfont
+        a.item
+          i.linkedin.icon.inverted
+        a.item
+          i.github.icon.inverted
+        a.item
+          i.twitter.icon.inverted
+    .ui.container(style="text-align:center;")
+      .ui.secondary.pointing.compact.menu.myfont.main-menu
+        a.item Home
+        a.item About
+        a.item Work
+        a.item Music
+        a.item Thoughts
+  .ui.segment(style="background:none;")
+    .ui.text.container
+      <h1 class="ui icon header myfont">
+        <i class="settings icon inverted"></i>
+        <div class="content">
+          Account Settings
+          <div class="sub header">Manage your account settings and set e-mail preferences.</div>
+        </div>
+      </h1>
