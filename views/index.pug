@@ -19,15 +19,15 @@ head
 body(style="background:none;")
   .ui.segment(style="background:none;height:100%;")
     .ui.container(style="margin-top:125px;margin-bottom:75px;")
-      h1.ui.dividing.header.myfont(style="text-align:center;font-size:80px;letter-spacing:18px;") MR.BEN.WELLS
+      h1.ui.dividing.myfont.main-title MR.BEN.WELLS
     .ui.container
       .ui.two.column.grid.stackable
-        .column(style="text-align:right;margin-top:15px;")
+        .column.mast-col-1
           .header.ui.myfont(style="font-size:-webkit-xxx-large;") Hi There,
           .header.ui.myfont(style="font-size:35px;") My name is Ben Wells.
           .header.ui.myfont(style="font-size:18px;") I create beautiful & functional sites and applications for the web.
         .column
-          img.ui.medium.circular.image(src="me.png")
+          img.ui.fluid.circular.image.main-img(src="me.png", style="max-width:300px;")
     .ui.container
       .ui.two.column.grid.stackable
         .column(style="text-align:center;")
