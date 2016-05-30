@@ -17,40 +17,49 @@ head
 
   title CodeCHS
 body(style="background:none;")
-  .ui.segment(style="background:none;height:100%;")
-    .ui.container(style="margin-top:125px;margin-bottom:75px;")
-      h1.ui.dividing.myfont.main-title MR.BEN.WELLS
-    .ui.container
-      .ui.two.column.grid.stackable
-        .column.mast-col-1
-          .header.ui.myfont(style="font-size:-webkit-xxx-large;") Hi There,
-          .header.ui.myfont(style="font-size:35px;") My name is Ben Wells.
-          .header.ui.myfont(style="font-size:18px;") I create beautiful & functional sites and applications for the web.
-        .column
-          img.ui.fluid.circular.image.main-img(src="me.png", style="max-width:300px;")
-    .ui.container
-      .ui.two.column.grid.stackable
-        .column(style="text-align:center;")
-          .ui.secondary.pointing.icon.labeled.compact.menu.myfont
-            a.item
-              i.linkedin.icon.inverted
-            a.item
-              i.github.icon.inverted
-            a.item
-              i.twitter.icon.inverted
-        .column
-          .ui.secondary.pointing.icon.labeled.compact.menu.myfont(style="margin-top:16px;")
-            a.item Home
-            a.item About
-            a.item Work
-            a.item Music
-            a.item Thoughts
-  //- .ui.segment(style="background:none;")
-  //-   .ui.text.container
-  //-     <h1 class="ui icon header myfont">
-  //-       <i class="settings icon inverted"></i>
-  //-       <div class="content">
-  //-         Account Settings
-  //-         <div class="sub header">Manage your account settings and set e-mail preferences.</div>
-  //-       </div>
-  //-     </h1>
+  .ui.inverted.left.vertical.sidebar.menu.bensidebar
+    .item.myfont Home
+    .item.myfont Topics
+    .item.myfont Friends
+    .item.myfont Thoughts
+  .pusher(style="height:100%")
+    i.sidebar.icon.inverted#sidebar-icon(onclick="$('.bensidebar').sidebar('toggle');")
+    .ui.segment.landing-segment
+      .ui.text.container#social-menu(style="text-align:center;")
+        .ui.secondary.icon.labeled.compact.menu.myfont
+          a.item
+            i.linkedin.icon.inverted
+          a.item.itembenn(style="display:none;")
+            i.linkedin.icon.inverted
+          a.item
+            i.github.icon.inverted
+          a.item
+            i.twitter.icon.inverted
+      .ui.container#title
+        h1.ui.myfont.main-title MR.BEN.WELLS
+      .ui.container
+        .ui.two.column.grid.stackable
+          .column.small-pic(style="display:none;")
+            img.ui.fluid.circular.image.main-img(src="me.png", style="max-width:200px;")
+          .column.mast-col-1
+            .header.ui.myfont.header1(style="font-size:36px;") Hi there,
+            .header.ui.myfont.header2(style="font-size:26px;") I'm a full-stack web developer currently residing in Charleston, SC.
+            .header.ui.myfont.header3(style="font-size:22px;") I love to create beautiful, functional sites and applications for the web.
+          .column.large-pic
+            img.ui.fluid.circular.image.main-img(src="me.png", style="max-width:300px;")
+      .ui.text.container(style="text-align:center;")
+        .ui.secondary.pointing.icon.labeled.compact.menu.myfont.desktop-menu(style="margin-top:30px;font-size:20px;")
+          a.item Home
+          a.item About
+          a.item Work
+          a.item Music
+          a.item Thoughts
+    .ui.segment(style="background:none;")
+      .ui.text.container
+        <h1 class="ui icon header myfont">
+          <i class="settings icon inverted"></i>
+          <div class="content">
+            Account Settings
+            <div class="sub header">Manage your account settings and set e-mail preferences.</div>
+          </div>
+        </h1>
